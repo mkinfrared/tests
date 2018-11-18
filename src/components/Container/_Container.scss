@@ -1,0 +1,30 @@
+.container {
+  padding: 20px;
+  h1 {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    font-size: 32px;
+  }
+  .state-links {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    outline: 1px dashed red;
+    a {
+      margin-bottom: 10px;
+    }
+  }
+  .props-links {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    outline: 1px dashed green;
+    a {
+      margin-bottom: 10px;
+    }
+  }
+  .tests {
+    text-align: center;
+  }
+}

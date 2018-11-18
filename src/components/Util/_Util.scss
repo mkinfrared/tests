@@ -1,0 +1,13 @@
+.util {
+  border-width: 1px;
+  border-style: dashed;
+  border-color: green;
+  .test {
+    width: 300px;
+    height: 200px;
+    @media (min-width: 401px) and (max-width: 799px) {
+      position: fixed;
+      list-style-type: disc;
+    }
+  }
+}

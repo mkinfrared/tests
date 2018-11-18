@@ -1,14 +1,146 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
 body {
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+.container {
+  padding: 20px;
 }
+.container h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  font-size: 32px;
+}
+.container .state-links {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  outline: 1px dashed red;
+}
+.container .state-links a {
+  margin-bottom: 10px;
+}
+.container .props-links {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  outline: 1px dashed green;
+}
+.container .props-links a {
+  margin-bottom: 10px;
+}
+.container .tests {
+  text-align: center;
+}
+
+.test {
+  padding: 0 20px;
+}
+.test h2 {
+  font-weight: bold;
+  font-size: 28px;
+  margin: 40px 0;
+}
+
+.question {
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
+  padding: 20px 30px;
+  margin-bottom: 30px;
+}
+.question h3 {
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.question h4 {
+  text-align: left;
+  font-weight: bold;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+.question .answers {
+  display: flex;
+  align-items: flex-start;
+  padding-left: 10px;
+  flex-direction: column;
+  text-align: left;
+}
+.question .answers label {
+  margin-bottom: 10px;
+}
+
+.util {
+  border-width: 1px;
+  border-style: dashed;
+  border-color: green;
+}
+.util .test {
+  width: 300px;
+  height: 200px;
+}
+@media (min-width: 401px) and (max-width: 799px) {
+  .util .test {
+    position: fixed;
+    list-style-type: disc;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
